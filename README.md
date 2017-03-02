@@ -1,6 +1,6 @@
-# ElixirDaze 2017 Nerves Demo
+# ElixirDaze 2017 pi3 wifi/logging/remsh/cell demo
 
-This repo is the result of the live coding demo I gave at ElixirDaze 2017.   
+This repo is the result of the live coding demo I gave at ElixirDaze 2017.    It gets wifi, erlang distribution, remote shell, multicast logging, and cell discovery and metadata working on a pi3.
 
 This README contains the notes I used when live coding the demo here.   The repo here is the result of following this script in a blank directory.
 
