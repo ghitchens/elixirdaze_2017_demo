@@ -1,0 +1,5 @@
+## Start the Elixir shell
+-noshell
+-user Elixir.IEx.CLI
+-setcookie democookie
+-extra --no-halt
