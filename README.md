@@ -27,7 +27,7 @@ To start your Nerves app:
 
 ```bash
 # mix nerves.new demo
-# mix nerves.new demo -- target rpi3
+# mix nerves.new demo --target rpi3
 ```
 
 #### in mix.exs
@@ -104,7 +104,7 @@ config :nerves_cell, Mix.Project.config
 ```elixir
 
 # module variables
-@architecture System.get_env("NERVES_ARCHITECURE") || "unknown"
+@architecture System.get_env("NERVES_ARCHITECTURE") || "unknown"
 @timestamp DateTime.to_unix(DateTime.utc_now)
 @version "0.1.2-dev-#{@timestamp}"
 ...
