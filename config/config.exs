@@ -9,9 +9,7 @@ config :demo, :wlan0, ssid: "boo",  key_mgmt: :"WPA-PSK",  psk: "thunderstruck"
 
 # config.exs
 config :logger,
-        backends: [ :console, LoggerMulticastBackend ],
-        level: :debug,
-        format: "$time $metadata[$level] $message\n"
+        backends: [ :console, LoggerMulticastBackend ]
 
 config :nerves_cell, Mix.Project.config
 

@@ -74,9 +74,7 @@ config :demo, :wlan0, ssid: "yourssid",  key_mgmt: :"WPA-PSK",  psk: "yourwifipa
 #### config.exs
 ```elixir
 config :logger,
-        backends: [ :console, LoggerMulticastBackend ],
-        level: :debug,
-        format: "$time $metadata[$level] $message\n"
+        backends: [ :console, LoggerMulticastBackend ]
 ```
 
 #### watching log during an update
