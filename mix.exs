@@ -2,7 +2,7 @@ defmodule Demo.Mixfile do
   use Mix.Project
 
   @target System.get_env("NERVES_TARGET") || "rpi3"
-  @architecture System.get_env("NERVES_ARCHITECURE") || "unknown"
+  @architecture System.get_env("NERVES_ARCHITECTURE") || "unknown"
   @timestamp DateTime.to_unix(DateTime.utc_now)
   @version "0.1.2-dev-#{@timestamp}"
 

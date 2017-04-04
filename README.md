@@ -1,5 +1,7 @@
 # ElixirDaze 2017 pi3 wifi/logging/remsh/cell demo
 
+[![Video](http://img.youtube.com/vi/O39ipRsXv3Y/0.jpg)](https://youtu.be/O39ipRsXv3Y)
+
 This repo is the result of the live coding demo I gave at ElixirDaze 2017.    It gets wifi, erlang distribution, remote shell, multicast logging, and cell discovery and metadata working on a pi3.
 
 This README contains the notes I used when live coding the demo here.   The repo here is the result of following this script in a blank directory.
@@ -27,7 +29,7 @@ To start your Nerves app:
 
 ```bash
 # mix nerves.new demo
-# mix nerves.new demo -- target rpi3
+# mix nerves.new demo --target rpi3
 ```
 
 #### in mix.exs
@@ -104,7 +106,7 @@ config :nerves_cell, Mix.Project.config
 ```elixir
 
 # module variables
-@architecture System.get_env("NERVES_ARCHITECURE") || "unknown"
+@architecture System.get_env("NERVES_ARCHITECTURE") || "unknown"
 @timestamp DateTime.to_unix(DateTime.utc_now)
 @version "0.1.2-dev-#{@timestamp}"
 ...
